@@ -4,6 +4,8 @@
 # Licensed under the Apache License.
 #
 
+# Version tags should be written this way:
+# Example: version.version_number.model.releaseyear.buildnumber.release
 # Tag: R.11.T2E.21.01.REL
 
 # Makefile needs to be inherited from emerald.mk
