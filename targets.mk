@@ -10,13 +10,13 @@
 
 KERNEL_MTK_PREBUILTS_PATH := device/teracube/emerald-kernel
 
-# Kernel
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(KERNEL_MTK_PREBUILTS_PATH)/Image.gz
+# Kernel definitions
+LOCAL_KERNEL := $(KERNEL_MTK_PREBUILTS_PATH)/Image.gz
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
 
 # Set prebuilt device tree blob and overlay for emerald product
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_MTK_PREBUILTS_PATH)
-TARGET_PREBUILT_DTB := $(KERNEL_MTK_PREBUILTS_PATH)/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_MTK_PREBUILTS_PATH)/dtbo.img
 
 # Kernel modules
