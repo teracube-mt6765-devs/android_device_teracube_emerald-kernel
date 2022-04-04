@@ -4,6 +4,8 @@
 # Licensed under the Apache License.
 #
 
+# Tag: R.11.T2E.21.01.REL
+
 # Makefile needs to be inherited from emerald.mk
 
 KERNEL_MTK_PREBUILTS_PATH := device/teracube/emerald-kernel
